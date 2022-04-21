@@ -56,16 +56,12 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -74,9 +70,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Api  produced in laravel for assignement given by Estee Lauder.  Based on food truck licensing informition provided in San Franscisco open data.
+Allows the user to find food trucks in zip codes or near particular latitude or longitudes.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -96,29 +91,19 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/Tuhin65/Food-Trucks-SF.git
    ```
-3. Install NPM packages
+2. Load application data
    ```sh
-   npm install
+   cd appdata
+   
+   mysql -u root -p < locations.sql   
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -127,41 +112,72 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Use postman or other application to make calls on the api endpoints as follows:
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+1. View all food trucks
+   ```sh
+   /api/v1/locations 
+   ```
+
+2. View all food trucks in zip code (Available zip codes are )
+   ```sh
+   /api/v1/locations?zip=58   
+   ```
+    The zip codes with food trucks in San Fancisco are:
+
+    54
+55
+56
+57
+58
+64
+308
+309
+310
+28852
+28853
+28854
+28855
+28856
+28857
+28858
+28859
+28860
+28861
+28862
+29490
+29491
+29492
+
+
+3. View nearest 8 food trucks near a location
+   ```sh
+   /api/v1/locations/near?lon=-122.402978526686&lat=-122.402978526686
+   ```
+
+
+
+4. Get details of food truck by ID
+   ```sh
+   /api/v1/locations/5
+   ```
+
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
+<!-- POTENTIAL FUTURE DEVELOPMENT -->
+## POTENTIAL DEVELOPMENTS
 
-<!-- CONTRIBUTING -->
-## Contributing
+With more time there is potential to create a front end that uses geo-location to make a web page or app that shows food trucks near your location.
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Could be similar to one I developed to show property information: https://www.proviser.com/uk/house-prices/find-sold-prices
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Which shows properies sold near the user (England and Wales only)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -179,22 +195,12 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Tuhin Reynolds-Imam - [Linkedin](https://www.linkedin.com/in/tuhin-reynolds-imam/) - tuhinimam@live.co.uk
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
+Project Link: [https://github.com/Tuhin65/Food-Trucks-SF](https://github.com/Tuhin65/Food-Trucks-SF)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 
 
 
