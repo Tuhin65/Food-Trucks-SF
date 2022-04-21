@@ -173,11 +173,15 @@ Use postman or other application to make calls on the api endpoints as follows:
 <!-- POTENTIAL FUTURE DEVELOPMENT -->
 ## POTENTIAL DEVELOPMENTS
 
+#### Front End Development
+
 With more time there is potential to create a front end that uses geo-location to make a web page or app that shows food trucks near your location.
 
 Could be similar to one I developed to show property information: https://www.proviser.com/uk/house-prices/find-sold-prices
 
 Which shows properies sold near the user (England and Wales only)
+
+#### Unit/Feature Tests
 
 Also, it would be good to have the time to create Unit/Feature tests for the project.
 
