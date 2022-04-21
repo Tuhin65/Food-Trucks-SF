@@ -30,14 +30,14 @@
   <p align="center">
     An api to find locations and information about food trucks in San Francisco.
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Tuhin65/Food-Trucks-SF"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/Tuhin65/Food-Trucks-SF">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/Tuhin65/Food-Trucks-SF/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/Tuhin65/Food-Trucks-SF/issues">Request Feature</a>
   </p>
 </div>
 
