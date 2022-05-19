@@ -70,7 +70,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Api  produced in laravel for assignement given by Estee Lauder.  Based on food truck licensing informition provided in San Franscisco open data.
+Api  produced in laravel for assignement given by Estee Lauder.  Based on food truck licensing information provided in San Franscisco open data.
 Allows the user to find food trucks in zip codes or near particular latitude or longitudes.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
